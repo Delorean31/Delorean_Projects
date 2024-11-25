@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Producto</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #002d26;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #004d40;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        header h1 {
+            margin: 0 auto;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .filters select,
+        .filters input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .filters button {
+            background-color: #fbbf24;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .table-container {
+            background: #fff;
+            color: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .actions button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .btn-edit {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .btn-delete {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .btn-price {
+            background-color: #2196f3;
+            color: white;
+        }
+
+        .details {
+            background-color: #fff;
+            color: #000;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+        }
+
+        .details img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .details-table {
+            width: 100%;
+        }
+
+        .details-table th, .details-table td {
+            padding: 5px 10px;
+        }
+
+        #back-button {
+            background-color: #fbbf24;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images\signup-image.png" alt="MAPESA Logo">
+        <h1>Detalles de Producto</h1>
+    </header>
+    <div class="container">
+        <div class="filters">
+            <div>
+                <select id="category">
+                    <option>Útiles Escolares</option>
+                </select>
+                <select id="subcategory">
+                    <option>Cuadernos</option>
+                </select>
+                <select id="type">
+                    <option>Cuadriculado A4</option>
+                </select>
+                <select id="brand">
+                    <option>JUSTUS</option>
+                </select>
+                <input type="text" id="barcode" placeholder="Código de Barra">
+            </div>
+            <button>+ Nuevo Producto</button>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre del Producto</th>
+                        <th>Marca</th>
+                        <th>Stock</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>UES-CUA-CUAD4-001</td>
+                        <td>Cuaderno Amarillo T/A-4 Cuadriculado</td>
+                        <td>JUSTUS</td>
+                        <td>50</td>
+                        <td class="actions">
+                            <button class="btn-delete">🗑️</button>
+                            <button class="btn-edit">✏️</button>
+                            <button class="btn-price">💲</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="details">
+            <img src="images\cuaderno.png" alt="Producto">
+            <table class="details-table">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <tr>
+                    <th>Descripción:</th>
+                    <td>Cuaderno Deluxe Cuadriculado A4 Sólido Amarillo x80</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>U Medida:</th>
+                    <td>UNIDAD</td>
+                    <td>DOCENA</td>
+                    <td>CAJA</td>
+                </tr>
+                <tr>
+                    <th>Precios:</th>
+                    <td>4.20</td>
+                    <td>48.00</td>
+                    <td>XXXXX</td>
+                </tr>
+                <tr>
+                    <th>Marca:</th>
+                    <td>JUSTUS</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Código de Barras:</th>
+                    <td>##########</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <button id="back-button" onclick="location.href='inicio.html';">Regresar</button>
+    </div>
+</body>
+</html>

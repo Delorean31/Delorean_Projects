@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images\signup-image.png" alt="MAPESA Logo" onclick="location.href='login.html';">
+        <h1>Listado de Productos</h1>
+    </header>
+    <div class="container">
+        <div class="filters">
+            <div>
+                <select id="category">
+                    <option>Categoría</option>
+                </select>
+                <select id="subcategory">
+                    <option>Sub Categoría</option>
+                </select>
+                <select id="productType">
+                    <option>Tipo de Producto</option>
+                </select>
+                <select id="brand">
+                    <option>Marca</option>
+                </select>
+                    <input type="text" id="barcode" placeholder="Código de Barra">
+                </div>
+                <button id="newProduct" onclick="location.href='crear_producto.html';">+ Nuevo Producto</button>
+            </div>
+    
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre del Producto</th>
+                            <th>Marca</th>
+                            <th>Stock</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productList">
+                        <tr onclick="location.href='visualizador.html';">
+                            <td>UES-CAR-FOSC-001</td>
+                            <td>Cartulina Fosforescente C/Naranja </td>
+                            <td>Económico</td>
+                            <td></td>
+                            <td class="actions">
+                                <button class="btn-delete">🗑️</button>
+                                <button class="btn-edit">✏️</button>
+                                <button class="btn-price">💲</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UES-CAR-FOSC-001</td>
+                            <td>Cartulina Fosforescente C/Naranja</td>
+                            <td>Económico</td>
+                            <td></td>
+                            <td class="actions">
+                                <button class="btn-delete">🗑️</button>
+                                <button class="btn-edit">✏️</button>
+                                <button class="btn-price">💲</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UES-CAR-FOSC-001</td>
+                            <td>Cartulina Fosforescente C/Naranja</td>
+                            <td>Económico</td>
+                            <td></td>
+                            <td class="actions">
+                                <button class="btn-delete">🗑️</button>
+                                <button class="btn-edit">✏️</button>
+                                <button class="btn-price">💲</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UES-CAR-FOSC-001</td>
+                            <td>Cartulina Fosforescente C/Naranja</td>
+                            <td>Económico</td>
+                            <td></td>
+                            <td class="actions">
+                                <button class="btn-delete">🗑️</button>
+                                <button class="btn-edit">✏️</button>
+                                <button class="btn-price">💲</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UES-CAR-FOSC-001</td>
+                            <td>Cartulina Fosforescente C/Naranja</td>
+                            <td>Económico</td>
+                            <td></td>
+                            <td class="actions">
+                                <button class="btn-delete">🗑️</button>
+                                <button class="btn-edit">✏️</button>
+                                <button class="btn-price">💲</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UES-CAR-FOSC-001</td>
+                            <td>Cartulina Fosforescente C/Naranja</td>
+                            <td>Económico</td>
+                            <td></td>
+                            <td class="actions">
+                                <button class="btn-delete">🗑️</button>
+                                <button class="btn-edit">✏️</button>
+                                <button class="btn-price">💲</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UES-CAR-FOSC-001</td>
+                            <td>Cartulina Fosforescente C/Naranja</td>
+                            <td>Económico</td>
+                            <td></td>
+                            <td class="actions">
+                                <button class="btn-delete">🗑️</button>
+                                <button class="btn-edit">✏️</button>
+                                <button class="btn-price">💲</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UES-CAR-FOSC-001</td>
+                            <td>Cartulina Fosforescente C/Naranja</td>
+                            <td>Económico</td>
+                            <td></td>
+                            <td class="actions">
+                                <button class="btn-delete">🗑️</button>
+                                <button class="btn-edit">✏️</button>
+                                <button class="btn-price">💲</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UES-CAR-FOSC-001</td>
+                            <td>Cartulina Fosforescente C/Naranja</td>
+                            <td>Económico</td>
+                            <td></td>
+                            <td class="actions">
+                                <button class="btn-delete">🗑️</button>
+                                <button class="btn-edit">✏️</button>
+                                <button class="btn-price">💲</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UES-CAR-FOSC-001</td>
+                            <td>Cartulina Fosforescente C/Naranja</td>
+                            <td>Económico</td>
+                            <td></td>
+                            <td class="actions">
+                                <button class="btn-delete">🗑️</button>
+                                <button class="btn-edit">✏️</button>
+                                <button class="btn-price">💲</button>
+                            </td>
+                        </tr>
+                        <!-- Filas adicionales se añadirán dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+            <button id="logout" style="margin-top: 20px; background-color: #ff5722; border: none; padding: 10px 20px; border-radius: 5px; color: white; cursor: pointer;" 
+            onclick="location.href='login.html';">Cerrar Sesión</button>
+        </div>
+    
+        <script>
+            // JavaScript para manejar eventos
+            document.getElementById('newProduct').addEventListener('click', () => {
+                alert('Función para agregar un nuevo producto');
+            });
+    
+            document.getElementById('logout').addEventListener('click', () => {
+                alert('Sesión cerrada');
+            });
+    
+            const actionButtons = document.querySelectorAll('.actions button');
+            actionButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const action = e.target.classList.contains('btn-delete') ? 'Eliminar' :
+                                   e.target.classList.contains('btn-edit') ? 'Editar' : 'Actualizar Precio';
+                    alert(`Acción: ${action}`);
+                });
+            });
+        </script>
+    </body>
+    </html>
+    

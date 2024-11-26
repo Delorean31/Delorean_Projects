@@ -102,3 +102,29 @@ tr:nth-child(even) {
     background-color: #2196f3;
     color: white;
 }
+
+
+
+.dropdown-content {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 100;
+}
+.dropdown-content span {
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+    text-align: left;
+}
+.dropdown-content span:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
